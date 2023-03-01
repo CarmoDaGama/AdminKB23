@@ -2,10 +2,10 @@
 
 namespace Dominio.Modelos
 {
-    [Table(name:"Categorias")]
-    public class Categoria
+    [Table(name: "Bancos")]
+    public class Bank
     {
-        public int CategoriaId { get; set; }
+        public int BancoId { get; set; }
         public string Nome { get; set; }
     }
 }

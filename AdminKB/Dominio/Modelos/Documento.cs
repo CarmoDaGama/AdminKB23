@@ -14,7 +14,7 @@ namespace Dominio.Modelos
 
 
         public int ClienteId { get; set; }
-        public Cliente Cliente { get; set; }
+        public Client Cliente { get; set; }
         public int TipoDocumentoId { get; set; }
         public TipoDocumento Tipo { get; set; }
         public int TurnoId { get; set; }

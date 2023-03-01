@@ -481,6 +481,16 @@ namespace AdminKB.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Income_40px {
+            get {
+                object obj = ResourceManager.GetObject("Income_40px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         /// </summary>
         internal static DevExpress.Utils.Svg.SvgImage Licensa {
@@ -856,6 +866,16 @@ namespace AdminKB.Properties {
         internal static DevExpress.Utils.Svg.SvgImage TurnoBranco {
             get {
                 object obj = ResourceManager.GetObject("TurnoBranco", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage US_Dollar {
+            get {
+                object obj = ResourceManager.GetObject("US Dollar", resourceCulture);
                 return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }

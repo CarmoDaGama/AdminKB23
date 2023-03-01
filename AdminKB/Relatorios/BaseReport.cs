@@ -110,10 +110,10 @@ namespace AdminKB.Relatorios
         private void MostrarSubCabecalho()
         {
             //Dados do Cliente
-            lblNomeCliente.Text = "Nome: " + DocumentoActual.Cliente.Nome;
+            lblNomeCliente.Text = "Nome: " + DocumentoActual.Cliente.Name;
             labelNifCliente.Text = "NIF: " + DocumentoActual.Cliente.Nif;
-            lblTelCliente.Text = "Tel: " + DocumentoActual.Cliente.Telefone;
-            lblMoradaCliente.Text = "Morada: " + DocumentoActual.Cliente.Morada;
+            lblTelCliente.Text = "Tel: " + DocumentoActual.Cliente.Telephone;
+            lblMoradaCliente.Text = "Morada: " + DocumentoActual.Cliente.Location;
 
             //Dados do documento
             cellNomeDocumento.Text = DocumentoActual.Tipo.Nome;

@@ -2,7 +2,7 @@
 
 namespace AdminKB.Aplicacoes
 {
-    public class CategoriaApp : AppBase<Categoria>
+    public class CategoriaApp : AppBase<Category>
     {
         public CategoriaApp():base(true)
         {
@@ -10,9 +10,9 @@ namespace AdminKB.Aplicacoes
         }
         protected override void InicializaTabela()
         {
-            Adicionar(new Categoria()
+            Adicionar(new Category()
             {
-                Nome = "Desconhecida"
+                Name = "Desconhecida"
             });
             base.InicializaTabela();
         }

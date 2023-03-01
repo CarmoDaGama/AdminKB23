@@ -21,7 +21,7 @@ namespace AdminKB.Formularios.Usuarios.Acessos
         private AcessoApp _AcessoApp;
 
         private bool Salvo { get; set; } = false;
-        private Acesso AcessoSalvar { get; set; }
+        private Access AcessoSalvar { get; set; }
         private OperacoesDeFormulario Operacao { get; set; }
         public List<string> ListaGeral { get; set; }
         private string Gambiarra;
@@ -114,7 +114,7 @@ namespace AdminKB.Formularios.Usuarios.Acessos
         {
             if ((AcessoSalvar is null))
             {
-                AcessoSalvar = new Acesso();
+                AcessoSalvar = new Access();
             }
             EstruturaParaTexto();
             AcessoSalvar.Nome = txtNomeAcesso.Text;

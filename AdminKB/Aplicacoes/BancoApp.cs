@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AdminKB.Aplicacoes
 {
-    public class BancoApp : AppBase<Banco>
+    public class BancoApp : AppBase<Bank>
     {
         public BancoApp():base(true)
         {
@@ -17,7 +17,7 @@ namespace AdminKB.Aplicacoes
         {
             foreach (string nomeBanco in RetornaVectorBancos())
             {
-                Adicionar(new Banco
+                Adicionar(new Bank
                 {
                     Nome = nomeBanco
                 });

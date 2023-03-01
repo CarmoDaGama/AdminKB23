@@ -19,7 +19,7 @@ namespace AdminKB.Formularios.Clientes
     {
         private ClienteApp _ClienteApp;
 
-        private List<Cliente> Clientes { get; set; }
+        private List<Client> Clientes { get; set; }
 
         public FormClientes()
         {
@@ -74,10 +74,10 @@ namespace AdminKB.Formularios.Clientes
             if (gridClientes.RowCount > 0)
             {
                 var clienteId = Util.RetornaIdNaGrade(gridClientes, "ClienteId");
-                var result = Clientes.Where(f => f.ClienteId == clienteId).FirstOrDefault();
+                var result = Clientes.Where(f => f.ClientId == clienteId).FirstOrDefault();
                 if (!(result is null))
                 {
-                    if (result.Nome == Globais.ClientePadrao)
+                    if (result.Name == Globais.ClientePadrao)
                     {
                         Mensagem.Alerta("Não é possível alterar este cliente!");
                         return;
@@ -99,8 +99,8 @@ namespace AdminKB.Formularios.Clientes
                 {
 
                     var clienteId = Util.RetornaIdNaGrade(gridClientes, "ClienteId");
-                    var result = Clientes.Where(f => f.ClienteId == clienteId).FirstOrDefault(); 
-                    if (result.Nome == Globais.ClientePadrao)
+                    var result = Clientes.Where(f => f.ClientId == clienteId).FirstOrDefault(); 
+                    if (result.Name == Globais.ClientePadrao)
                     {
                         Mensagem.Alerta("Não é possível eliminar este cleinte!");
                         return;

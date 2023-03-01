@@ -58,7 +58,7 @@ namespace Dominio.Utilitarios
             }
         }
 
-        public static Acesso AcessoActual { get; set; }
+        public static Access AcessoActual { get; set; }
     }
 }
 

@@ -3,16 +3,16 @@ using Dominio.Utilitarios;
 
 namespace AdminKB.Aplicacoes
 {
-    public class ClienteApp : AppBase<Cliente>
+    public class ClienteApp : AppBase<Client>
     {
         public ClienteApp() : base(true)
         {
         }
         protected override void InicializaTabela()
         {
-            Adicionar(new Cliente()
+            Adicionar(new Client()
             {
-                Nome = Globais.ClientePadrao,
+                Name = Globais.ClientePadrao,
                 Nif = "999999999",
             });
             base.InicializaTabela();

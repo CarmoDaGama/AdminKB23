@@ -1,6 +1,6 @@
 ﻿namespace Dominio.Modelos
 {
-    public class Acesso
+    public class Access
     {
         public int AcessoId { get; set; }
         public string Nome { get; set; }

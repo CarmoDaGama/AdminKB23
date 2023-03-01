@@ -7,7 +7,7 @@ namespace Dominio.Modelos
         public int ProdutoId { get; set; }
         public string Nome { get; set; }
         public int CategoriaId { get; set; }
-        public Categoria Categoria { get; set; }
+        public Category Categoria { get; set; }
         public int ImpostoId { get; set; }
         public Imposto Imposto { get; set; }
         public int MotivoIsencaoId { get; set; }

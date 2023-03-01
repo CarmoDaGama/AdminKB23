@@ -125,7 +125,7 @@ namespace AdminKB.Relatorios
         {
             //Dados do Cliente
             var documentoActual = new DocumentoApp().RetornaDocumentoPorId(DocumentoActual.DocumentoId);
-            lblNomeCliente.Text = documentoActual.Cliente.Nome;
+            lblNomeCliente.Text = documentoActual.Cliente.Name;
             labelNifCliente.Text = "NIF: " + documentoActual.Cliente.Nif;
             //lblTelCliente.Text = "Tel: " + DocumentoActual.Cliente.Telefone;
             //lblMoradaCliente.Text = "Morada: " + DocumentoActual.Cliente.Morada;

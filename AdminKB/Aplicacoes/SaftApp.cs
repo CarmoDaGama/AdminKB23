@@ -682,12 +682,12 @@ namespace AdminKB.Aplicacoes
             for (int i = 0; i < clientes.Count; i++)
             {
                 custumer[i] = new AuditFileMasterFilesCustomer();
-                custumer[i].CustomerID = clientes[i].ClienteId.ToString();
+                custumer[i].CustomerID = clientes[i].ClientId.ToString();
                 custumer[i].AccountID = "Desconhecido";
-                custumer[i].CustomerTaxID =  (clientes[i].Nif == "999999999")? clientes[i].Nome : clientes[i].Nif;
-                custumer[i].CompanyName = clientes[i].Nome;
+                custumer[i].CustomerTaxID =  (clientes[i].Nif == "999999999")? clientes[i].Name : clientes[i].Nif;
+                custumer[i].CompanyName = clientes[i].Name;
                 custumer[i].BillingAddress = new AuditFileMasterFilesCustomerBillingAddress();
-                custumer[i].BillingAddress.AddressDetail = string.IsNullOrEmpty(clientes[i].Endereco)? "Não Definido" : clientes[i].Endereco;
+                custumer[i].BillingAddress.AddressDetail = string.IsNullOrEmpty(clientes[i].Address)? "Não Definido" : clientes[i].Address;
                 custumer[i].BillingAddress.City = "Luanda";
                 custumer[i].BillingAddress.Country = "AO";
                 custumer[i].SelfBillingIndicator = "0";
@@ -696,15 +696,15 @@ namespace AdminKB.Aplicacoes
             return custumer;
         }
 
-        private List<Cliente> RetornaclientesNasFacturas(DateTime dataInicio, DateTime dataFim)
+        private List<Client> RetornaclientesNasFacturas(DateTime dataInicio, DateTime dataFim)
         {
             using (var contexto = Iniciar_Contexto(LerConexaoNoFicheiro())) { 
-                var listcliente = contexto.Set<Cliente>()
+                var listcliente = contexto.Set<Client>()
                                .ToList();
-                var clientes = new List<Cliente>();
+                var clientes = new List<Client>();
                 foreach (var item in listcliente)
                 {
-                    var totalGasto = RetornaTotalGastoDoCliente(item.ClienteId);
+                    var totalGasto = RetornaTotalGastoDoCliente(item.ClientId);
                     if (totalGasto > 0)
                     {
                         clientes.Add(item);

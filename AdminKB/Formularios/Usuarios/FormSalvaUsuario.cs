@@ -15,7 +15,7 @@ namespace AdminKB.Formularios.Usuarios
 
         private bool Salvo { get; set; } = false;
         private Usuario UsuarioSalvar { get;  set; }
-        private Acesso AcessoPadrao { get;  set; }
+        private Access AcessoPadrao { get;  set; }
         private OperacoesDeFormulario Operacao { get; set; }
 
         public FormSalvaUsuario()
@@ -173,7 +173,7 @@ namespace AdminKB.Formularios.Usuarios
 
         private void txtAcesso_Click(object sender, EventArgs e)
         {
-            var acesso = new FormListagemTabela<Acesso>().BuscaRegistroSelecionado();
+            var acesso = new FormListagemTabela<Access>().BuscaRegistroSelecionado();
             if (!(acesso is null))
             {
                 if (UsuarioSalvar is null)
