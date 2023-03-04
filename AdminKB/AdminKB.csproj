@@ -138,6 +138,7 @@
     <Compile Include="Aplicacoes\TurnoApp.cs" />
     <Compile Include="Aplicacoes\UsuarioApp.cs" />
     <Compile Include="ConexaoRemota\ContextoSqlRemoto.cs" />
+    <Compile Include="Dominio\Enumerados\BalanceType.cs" />
     <Compile Include="Dominio\Enumerados\Destino.cs" />
     <Compile Include="Dominio\Enumerados\EstadoDocumento.cs" />
     <Compile Include="Dominio\Enumerados\EstadoEntidade.cs" />
