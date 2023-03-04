@@ -104,10 +104,10 @@ namespace AdminKB.Relatorios
         {
             //Dados do Cliente
             var cliente = new ClienteApp().BuscaPorId(DocumentoActual.ClienteId);
-            lblNomeCliente.Text = "Nome: " + cliente.Name;
+            lblNomeCliente.Text = "Nome: " + cliente.Nome;
             labelNifCliente.Text = "NIF: " + cliente.Nif;
-            lblTelCliente.Text = "Tel: " + cliente.Telephone;
-            lblMoradaCliente.Text = "Morada: " + cliente.Location;
+            lblTelCliente.Text = "Tel: " + cliente.Telefone;
+            lblMoradaCliente.Text = "Morada: " + cliente.Morada;
 
             //Dados do documento
             cellNomeDocumento.Text = (DocumentoActual.Tipo.Nome + " - " + DocumentoActual.Descricao).ToUpper();

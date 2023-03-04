@@ -136,8 +136,8 @@
   <data name="abrir turno" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\abrir turno.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="Consultas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Consultas.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="Documents Branco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Documents Branco.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -169,8 +169,11 @@
   <data name="PermssaoDeAcesso1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PermssaoDeAcesso1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="Licensa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Licensa.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="Documento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documento.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="Product0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Product0.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="Impostos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Impostos.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -178,11 +181,11 @@
   <data name="Open Turno" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Open Turno.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="Income_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Income_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Server" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Server.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="Remover Linha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Remover Linha.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="Config" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Config.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -226,6 +229,9 @@
   <data name="Padlock Azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Padlock Azul.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="Cliente Final" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cliente Final.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="Configuracoes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Configuracoes.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
@@ -265,11 +271,8 @@
   <data name="Fechar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fechar.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="Remover Linha" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Remover Linha.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="Novo Documento" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Novo Documento.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="Consultas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Consultas.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="Card Exchange" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Card Exchange.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -286,8 +289,8 @@
   <data name="Registros Turnos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Registros Turnos.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="Cliente Final" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cliente Final.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="BigServer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BigServer.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="Transferencia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Transferencia.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -304,20 +307,20 @@
   <data name="Message" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Message.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Save.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="BaseDeDados" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BaseDeDados.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="Pagamento" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pagamento.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="Quantidade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Quantidade.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="Close" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Close.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="Product0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Product0.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="Mais" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mais.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="Support" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Support.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -331,14 +334,14 @@
   <data name="Cursor Seleciona" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cursor Seleciona.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="Documento" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Documento.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="Novo Documento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Novo Documento.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="Anular Documento" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Anular Documento.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="Quantidade" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Quantidade.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="Licensa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Licensa.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="SaftXML" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SaftXML.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -352,14 +355,8 @@
   <data name="User" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\User.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="BigServer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BigServer.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="Lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lock.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="Mais" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mais.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="Cliente Final Menor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cliente Final Menor.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -375,8 +372,5 @@
   </data>
   <data name="Forma Pagamento" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Forma Pagamento.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="US Dollar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\US Dollar.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
 </root>

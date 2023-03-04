@@ -122,7 +122,6 @@
     <Compile Include="Aplicacoes\DocumentoApp.cs" />
     <Compile Include="Aplicacoes\EmpresaApp.cs" />
     <Compile Include="Aplicacoes\EstoqueApp.cs" />
-    <Compile Include="Aplicacoes\FinanceApp.cs" />
     <Compile Include="Aplicacoes\FormaPagaApp.cs" />
     <Compile Include="Aplicacoes\FormaPagamentoApp.cs" />
     <Compile Include="Aplicacoes\ImpostoApp.cs" />
@@ -151,13 +150,12 @@
     <Compile Include="Dominio\Enumerados\TipoModuloLicensa.cs" />
     <Compile Include="Dominio\Enumerados\TipoMoeda.cs" />
     <Compile Include="Dominio\Enumerados\TipoProduto.cs" />
-    <Compile Include="Dominio\Modelos\Access.cs" />
+    <Compile Include="Dominio\Modelos\Acesso.cs" />
     <Compile Include="Dominio\Modelos\AuditFile.cs" />
-    <Compile Include="Dominio\Modelos\Bank.cs" />
-    <Compile Include="Dominio\Modelos\BaseEntity.cs" />
-    <Compile Include="Dominio\Modelos\Cash.cs" />
-    <Compile Include="Dominio\Modelos\Category.cs" />
-    <Compile Include="Dominio\Modelos\Client.cs" />
+    <Compile Include="Dominio\Modelos\Banco.cs" />
+    <Compile Include="Dominio\Modelos\Caixa.cs" />
+    <Compile Include="Dominio\Modelos\Categoria.cs" />
+    <Compile Include="Dominio\Modelos\Cliente.cs" />
     <Compile Include="Dominio\Modelos\Conexao.cs" />
     <Compile Include="Dominio\Modelos\ContaBancaria.cs" />
     <Compile Include="Dominio\Modelos\Documento.cs" />
@@ -238,12 +236,6 @@
     </Compile>
     <Compile Include="Formularios\Documentos\FormMovimentaProduto.Designer.cs">
       <DependentUpon>FormMovimentaProduto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Financas\FormDashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Financas\FormDashboard.Designer.cs">
-      <DependentUpon>FormDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Financas\FormFormasPagamentos.cs">
       <SubType>Form</SubType>
@@ -527,9 +519,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Documentos\FormMovimentaProduto.resx">
       <DependentUpon>FormMovimentaProduto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Financas\FormDashboard.resx">
-      <DependentUpon>FormDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Financas\FormFormasPagamentos.resx">
       <DependentUpon>FormFormasPagamentos.cs</DependentUpon>
@@ -834,8 +823,6 @@
     <None Include="Resources\Chamada.svg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\US Dollar.svg" />
-    <None Include="Resources\Income_40px.png" />
     <None Include="Resources\PUBLICIDADE &amp; MARKETING.png" />
     <None Include="Resources\Company_500px.png" />
     <None Include="Resources\Locked.svg" />

@@ -73,7 +73,7 @@ namespace AdminKB.Formularios.Financas
         }
         private void PreencherCabecalho()
         {
-            txtEntidadeId.Text = DocumentoReciboActual.Cliente.ClientId.ToString();
+            txtEntidadeId.Text = DocumentoReciboActual.Cliente.ClienteId.ToString();
             txtNomeEntidade.Text = DocumentoReciboActual.NomeCliente;
             txtTotal.Text = Util.MostrarValorNaMoedaActual(RetornaTotalDocPagar());
             txtDescricao.Text = RetornaDescricaoDoPagamento();
@@ -112,7 +112,7 @@ namespace AdminKB.Formularios.Financas
 
             return troco;
         }
-        private Client RetornaCliente()
+        private Cliente RetornaCliente()
         {
             var firstDoc = DocumentosPorPagar.FirstOrDefault();
             return firstDoc.Cliente;

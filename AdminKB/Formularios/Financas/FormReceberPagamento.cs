@@ -225,11 +225,11 @@ namespace AdminKB.Formularios.Financas
                 var clienteClicado = ClientesDevedores.Where(d => d.ClienteId == clienteId).FirstOrDefault().Cliente;
                 DocumentoRecibo = new Documento()
                 {
-                    ClienteId = clienteClicado.ClientId,
-                    NomeCliente = clienteClicado.Name
+                    ClienteId = clienteClicado.ClienteId,
+                    NomeCliente = clienteClicado.Nome
                 };
                 txtClienteId.Text = clienteId.ToString();
-                txtCliente.Text = clienteClicado.Name;
+                txtCliente.Text = clienteClicado.Nome;
                 CarregarDocumentosPorPagar();
                 navigationFrame1.SelectedPage = pagePagamentos;
             }

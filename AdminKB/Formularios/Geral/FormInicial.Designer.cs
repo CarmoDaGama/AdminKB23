@@ -67,7 +67,6 @@ namespace AdminKB.Formularios.Geral
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.btnDashboard = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,10 +113,9 @@ namespace AdminKB.Formularios.Geral
             this.btnTiposDocumento,
             this.btnPermissoesAcessos,
             this.btnSaft,
-            this.btnUsuarioLagodo,
-            this.btnDashboard});
+            this.btnUsuarioLagodo});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 24;
+            this.ribbonControl1.MaxItemId = 23;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -497,7 +495,7 @@ namespace AdminKB.Formularios.Geral
             this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup3});
             this.ribbonPage3.Name = "ribbonPage3";
-            this.ribbonPage3.Text = "VENDA";
+            this.ribbonPage3.Text = "FACTURAÇÃO";
             // 
             // ribbonPageGroup3
             // 
@@ -529,7 +527,6 @@ namespace AdminKB.Formularios.Geral
             // 
             // ribbonPageGroup5
             // 
-            this.ribbonPageGroup5.ItemLinks.Add(this.btnDashboard);
             this.ribbonPageGroup5.ItemLinks.Add(this.btnReceberPagamentos);
             this.ribbonPageGroup5.ItemLinks.Add(this.btnDocumentosFin);
             this.ribbonPageGroup5.ItemLinks.Add(this.btnConsultas);
@@ -565,13 +562,6 @@ namespace AdminKB.Formularios.Geral
             // 
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "ribbonPage2";
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.Caption = "DASHBOARD";
-            this.btnDashboard.Id = 23;
-            this.btnDashboard.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDashboard.ImageOptions.SvgImage")));
-            this.btnDashboard.Name = "btnDashboard";
             // 
             // FormInicial
             // 
@@ -632,6 +622,5 @@ namespace AdminKB.Formularios.Geral
         private DevExpress.XtraBars.BarButtonItem btnPermissoesAcessos;
         private DevExpress.XtraBars.BarButtonItem btnSaft;
         private DevExpress.XtraBars.BarButtonItem btnUsuarioLagodo;
-        private DevExpress.XtraBars.BarButtonItem btnDashboard;
     }
 }

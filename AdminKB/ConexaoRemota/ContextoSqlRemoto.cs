@@ -25,7 +25,7 @@ namespace ConexaoRemota
         }
 
         public DbSet<Conexao> Conexoes { get; set; }
-        public DbSet<Access> Acessos { get; set; }
+        public DbSet<Acesso> Acessos { get; set; }
         public DbSet<Licenca> Licensas { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<TipoImposto> TipoImpostos { get; set; }
@@ -39,12 +39,12 @@ namespace ConexaoRemota
         public DbSet<TipoDocumento> TipoDocumentos { get; set; }
         public DbSet<Turno> Turnos { get; set; }
         public DbSet<Documento> Documentos { get; set; }
-        public DbSet<Client> Clientes { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
         public DbSet<ProdutoMovimentacao> ProdutoMovimentacoes { get; set; }
         public DbSet<Empresa> Empresas { get; set; }
         public DbSet<Pagamento> Pagamentos { get; set; }
         public DbSet<DocumentoAnulado> DocumentoAnulados { get; set; }
-        public DbSet<Bank> Bancos { get; set; }
+        public DbSet<Banco> Bancos { get; set; }
         public DbSet<ContaBancaria> ContaBancarias { get; set; }
         public DbSet<FormaPagamento> FormaPagamentos { get; set; }
         public DbSet<FormaPaga> FormaPagas { get; set; }

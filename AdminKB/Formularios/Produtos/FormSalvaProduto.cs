@@ -55,7 +55,7 @@ namespace AdminKB.Formularios.Produtos
             ProdutoDesteForm = new Produto();
             MotivoIsencaoNula = _MotivoIsencaoApp.BuscaTipoEntidadePadrao();
             ProdutoDesteForm.Categoria = _CategoriaApp.BuscaTipoEntidadePadrao();
-            ProdutoDesteForm.CategoriaId = ProdutoDesteForm.Categoria.CategoryId;
+            ProdutoDesteForm.CategoriaId = ProdutoDesteForm.Categoria.CategoriaId;
             ProdutoDesteForm.Imposto = _ImpostoApp.BuscaTipoEntidadePadrao();
             ProdutoDesteForm.ImpostoId = ProdutoDesteForm.Imposto.ImpostoId;
             ProdutoDesteForm.MotivoIsencao = MotivoIsencaoNula;
@@ -96,7 +96,7 @@ namespace AdminKB.Formularios.Produtos
                 txtProdutoId.Text = ProdutoDesteForm.ProdutoId.ToString();
                 txtCodigoDeBarra.Text = ProdutoDesteForm.CodigoDeBarra;
                 txtDescricao.Text = ProdutoDesteForm.Nome;
-                txtCategoria.Text = ProdutoDesteForm.Categoria.Name;
+                txtCategoria.Text = ProdutoDesteForm.Categoria.Nome;
                 txtImposto.Text = ProdutoDesteForm.Imposto.Nome;
                 txtMotivoIsencao.Text = ProdutoDesteForm.MotivoIsencao.Nome;
                 txtCusto.Text = ProdutoDesteForm.Custo.ToString("N2");
@@ -111,7 +111,7 @@ namespace AdminKB.Formularios.Produtos
         {
             ProdutoDesteForm.CodigoDeBarra = txtCodigoDeBarra.Text.Trim();
             ProdutoDesteForm.Nome = txtDescricao.Text.Trim();
-            ProdutoDesteForm.Categoria.Name = txtCategoria.Text;
+            ProdutoDesteForm.Categoria.Nome = txtCategoria.Text;
             ProdutoDesteForm.Imposto.Nome = txtImposto.Text;
             ProdutoDesteForm.MotivoIsencao.Nome = txtMotivoIsencao.Text;
             ProdutoDesteForm.Custo = Convert.ToDecimal(txtCusto.Text); 
@@ -153,12 +153,12 @@ namespace AdminKB.Formularios.Produtos
 
         private void txtCategoria_Click(object sender, EventArgs e)
         {
-            var mCategoria = new FormListagemTabela<Category>().BuscaRegistroSelecionado();
+            var mCategoria = new FormListagemTabela<Categoria>().BuscaRegistroSelecionado();
             ProdutoDesteForm.Categoria = mCategoria == null? ProdutoDesteForm.Categoria : mCategoria;
             if (!Util.ObjectoNulo(ProdutoDesteForm.Categoria))
             {
-                ProdutoDesteForm.CategoriaId = ProdutoDesteForm.Categoria.CategoryId;
-                txtCategoria.Text = ProdutoDesteForm.Categoria.Name;
+                ProdutoDesteForm.CategoriaId = ProdutoDesteForm.Categoria.CategoriaId;
+                txtCategoria.Text = ProdutoDesteForm.Categoria.Nome;
             }
         }
 
@@ -206,7 +206,7 @@ namespace AdminKB.Formularios.Produtos
 
         private void AnularEntidadesComponentes()
         {
-            ProdutoDesteForm.Categoria = new Category();
+            ProdutoDesteForm.Categoria = new Categoria();
             ProdutoDesteForm.Imposto = new Imposto();
             ProdutoDesteForm.MotivoIsencao = new MotivoIsencao();
             foreach (var item in ListaProdutoEstoque)
@@ -216,7 +216,7 @@ namespace AdminKB.Formularios.Produtos
         }
         private void IniciarEntidadesComponentes()
         {
-            ProdutoDesteForm.Categoria = new Category();
+            ProdutoDesteForm.Categoria = new Categoria();
             ProdutoDesteForm.Imposto = new Imposto();
             ProdutoDesteForm.MotivoIsencao = new MotivoIsencao();
             foreach (var item in ListaProdutoEstoque)

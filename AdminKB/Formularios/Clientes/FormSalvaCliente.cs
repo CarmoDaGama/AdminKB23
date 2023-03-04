@@ -19,7 +19,7 @@ namespace AdminKB.Formularios.Clientes
     {
         private ClienteApp _ClienteApp;
         private OperacoesDeFormulario Operacao { get; set; }
-        private Client ClienteSalvar { get; set; }
+        private Cliente ClienteSalvar { get; set; }
         private bool Salvo { get; set; }
 
         public FormSalvaCliente()
@@ -102,26 +102,26 @@ namespace AdminKB.Formularios.Clientes
         {
             if (!(ClienteSalvar is null))
             {
-                txtNome.Text = ClienteSalvar.Name;
+                txtNome.Text = ClienteSalvar.Nome;
                 txtNif.Text = ClienteSalvar.Nif;
-                txtTel.Text = ClienteSalvar.Telephone;
+                txtTel.Text = ClienteSalvar.Telefone;
                 txtEmail.Text = ClienteSalvar.Email;
-                txtEndereco.Text = ClienteSalvar.Address;
-                txtDebitoLimite.Text = ClienteSalvar.LimitDebit.ToString("N2");
+                txtEndereco.Text = ClienteSalvar.Endereco;
+                txtDebitoLimite.Text = ClienteSalvar.DebitoLimite.ToString("N2");
             }
         }
         private void PopularControlesNosCliente()
         {
             if ((ClienteSalvar is null))
             {
-                ClienteSalvar = new Client();
+                ClienteSalvar = new Cliente();
             }
-            ClienteSalvar.Name = txtNome.Text;
+            ClienteSalvar.Nome = txtNome.Text;
             ClienteSalvar.Nif = txtNif.Text;
-            ClienteSalvar.Telephone = txtTel.Text;
+            ClienteSalvar.Telefone = txtTel.Text;
             ClienteSalvar.Email = txtEmail.Text;
-            ClienteSalvar.Address = txtEndereco.Text;
-            ClienteSalvar.LimitDebit = Convert.ToDecimal(txtDebitoLimite.Text);
+            ClienteSalvar.Endereco = txtEndereco.Text;
+            ClienteSalvar.DebitoLimite = Convert.ToDecimal(txtDebitoLimite.Text);
 
         }
     }

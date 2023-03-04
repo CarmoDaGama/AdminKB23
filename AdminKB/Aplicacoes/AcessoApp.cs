@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace AdminKB.Aplicacoes
 {
-    public class AcessoApp : AppBase<Access>
+    public class AcessoApp : AppBase<Acesso>
     {
         public AcessoApp() : base(true)
         {
@@ -86,7 +86,7 @@ namespace AdminKB.Aplicacoes
             using (var contexto = Iniciar_Contexto(LerConexaoNoFicheiro()))
             {
                 var listAcessos = new List<string>();
-                var acesso = contexto.Set<Access>().Where(ac => ac.AcessoId == acessoId).FirstOrDefault();
+                var acesso = contexto.Set<Acesso>().Where(ac => ac.AcessoId == acessoId).FirstOrDefault();
                 if (!string.IsNullOrEmpty(acesso.Estrutura) && acesso.Estrutura != ".")
                 {
                     listAcessos = acesso.Estrutura.Split('*').ToList();
@@ -97,7 +97,7 @@ namespace AdminKB.Aplicacoes
 
         protected override void InicializaTabela()
         {
-            Adicionar(new Access()
+            Adicionar(new Acesso()
             {
                 Descricao = "Administrador tem acesso a todas funcionalidade do sistema",
                 Estrutura = ".",
@@ -105,17 +105,17 @@ namespace AdminKB.Aplicacoes
             }) ;
             base.InicializaTabela();
         }
-        public Access RetornaAcessoPorId(int acessoId)
+        public Acesso RetornaAcessoPorId(int acessoId)
         {
             using (var contexto = Iniciar_Contexto(LerConexaoNoFicheiro()))
-                return contexto.Set<Access>()
+                return contexto.Set<Acesso>()
                            .Where(a => a.AcessoId == acessoId)
                            .FirstOrDefault();
         }
-        public List<Access> RetornaAcessos()
+        public List<Acesso> RetornaAcessos()
         {
             using (var contexto = Iniciar_Contexto(LerConexaoNoFicheiro()))
-                return contexto.Set<Access>()
+                return contexto.Set<Acesso>()
                            .ToList();
         }
     }

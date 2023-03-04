@@ -43,10 +43,10 @@ namespace AdminKB.Relatorios
         {
             //Dados do Cliente
             var documentoActual = new DocumentoApp().RetornaDocumentoPorId(DocumentoActual.DocumentoId);
-            lblNomeCliente.Text = "Nome: " + documentoActual.Cliente.Name;
+            lblNomeCliente.Text = "Nome: " + documentoActual.Cliente.Nome;
             labelNifCliente.Text = "NIF: " + documentoActual.Cliente.Nif;
-            lblTelCliente.Text = "Tel: " + documentoActual.Cliente.Telephone;
-            lblMoradaCliente.Text = "Morada: " + documentoActual.Cliente.Location;
+            lblTelCliente.Text = "Tel: " + documentoActual.Cliente.Telefone;
+            lblMoradaCliente.Text = "Morada: " + documentoActual.Cliente.Morada;
 
             //Dados do documento
             cellNomeDocumento.Text = documentoActual.Tipo.Nome;

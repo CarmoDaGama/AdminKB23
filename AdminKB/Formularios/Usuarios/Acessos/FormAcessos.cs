@@ -20,7 +20,7 @@ namespace AdminKB.Formularios.Usuarios.Acessos
         private AcessoApp _AcessoApp;
 
         private bool Selecionado { get; set; }
-        private List<Access> Acessos { get; set; }
+        private List<Acesso> Acessos { get; set; }
 
         public FormAcessos()
         {
@@ -75,7 +75,7 @@ namespace AdminKB.Formularios.Usuarios.Acessos
             btnClose.Visible = true;
             return base.ShowDialog();
         }
-        public Access RetornaAcessoSelecionado()
+        public Acesso RetornaAcessoSelecionado()
         {
             RenderizarVisualizacaoDoForm();
             if (Selecionado)
