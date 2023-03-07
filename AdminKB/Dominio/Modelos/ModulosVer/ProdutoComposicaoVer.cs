@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Dominio.Modelos.ModulosVer
+namespace AdminKB.Dominio.Modelos.ModulosVer
 {
     public class ProdutoComposicaoVer
     {

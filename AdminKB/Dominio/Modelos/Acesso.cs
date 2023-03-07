@@ -1,4 +1,4 @@
-﻿namespace Dominio.Modelos
+﻿namespace AdminKB.Dominio.Modelos
 {
     public class Acesso
     {

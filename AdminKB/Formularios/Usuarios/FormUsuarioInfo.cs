@@ -1,4 +1,4 @@
-﻿using Dominio.Utilitarios;
+﻿using AdminKB.Dominio.Utilitarios;
 using System;
 
 namespace AdminKB.Formularios.Usuarios

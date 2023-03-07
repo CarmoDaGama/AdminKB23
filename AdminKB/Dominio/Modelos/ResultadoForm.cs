@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace Dominio.Modelos
+namespace AdminKB.Dominio.Modelos
 {
     public class ResultadoForm<TipoValor>
     {

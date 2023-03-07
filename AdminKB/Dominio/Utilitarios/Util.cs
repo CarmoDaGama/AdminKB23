@@ -1,6 +1,6 @@
 ﻿using DevExpress.XtraGrid.Views.Grid;
-using Dominio.Enumerados;
-using Dominio.Modelos;
+using AdminKB.Dominio.Enumerados;
+using AdminKB.Dominio.Modelos;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -8,7 +8,7 @@ using System.IO;
 using System.Windows.Forms;
 using static System.Windows.Forms.Control;
 
-namespace Dominio.Utilitarios
+namespace AdminKB.Dominio.Utilitarios
 {
     public static class Util
     {

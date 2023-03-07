@@ -1,7 +1,7 @@
 ﻿using DevExpress.XtraEditors;
 using DevExpress.XtraReports.UI;
-using Dominio.Enumerados;
-using Dominio.Utilitarios;
+using AdminKB.Dominio.Enumerados;
+using AdminKB.Dominio.Utilitarios;
 using System;
 using System.Drawing.Printing;
 

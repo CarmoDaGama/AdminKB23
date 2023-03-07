@@ -1,10 +1,10 @@
 ﻿using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using AdminKB.Aplicacoes;
-using Dominio.Enumerados;
+using AdminKB.Dominio.Enumerados;
 using AdminKB.Formularios.Geral;
-using Dominio.Modelos;
-using Dominio.Utilitarios;
+using AdminKB.Dominio.Modelos;
+using AdminKB.Dominio.Utilitarios;
 using System;
 
 namespace AdminKB.Formularios.Usuarios

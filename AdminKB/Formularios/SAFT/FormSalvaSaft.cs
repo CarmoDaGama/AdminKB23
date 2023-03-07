@@ -1,11 +1,11 @@
 ﻿using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using AdminKB.Aplicacoes;
-using Dominio.Utilitarios;
+using AdminKB.Dominio.Utilitarios;
 using System;
 using System.Diagnostics;
 using System.Windows.Forms;
-using Dominio.Modelos;
+using AdminKB.Dominio.Modelos;
 
 namespace AdminKB.Formularios.SAFT
 {

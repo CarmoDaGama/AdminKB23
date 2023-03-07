@@ -1,6 +1,6 @@
 ﻿using DevExpress.XtraReports.UI;
-using Dominio.Modelos;
-using Dominio.Utilitarios;
+using AdminKB.Dominio.Modelos;
+using AdminKB.Dominio.Utilitarios;
 
 namespace AdminKB.Relatorios.Cabecalhos
 {

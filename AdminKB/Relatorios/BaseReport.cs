@@ -1,14 +1,14 @@
 ﻿using DevExpress.XtraReports.UI;
 using AdminKB.Aplicacoes;
 using AdminKB.Relatorios.Cabecalhos;
-using Dominio.Utilitarios;
+using AdminKB.Dominio.Utilitarios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Dominio.Modelos;
-using Dominio.Enumerados;
+using AdminKB.Dominio.Modelos;
+using AdminKB.Dominio.Enumerados;
 
 namespace AdminKB.Relatorios
 {

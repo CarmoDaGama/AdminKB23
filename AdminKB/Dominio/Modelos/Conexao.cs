@@ -1,6 +1,6 @@
-﻿using Dominio.Enumerados;
+﻿using AdminKB.Dominio.Enumerados;
 
-namespace Dominio.Modelos
+namespace AdminKB.Dominio.Modelos
 {
     public class Conexao
     {

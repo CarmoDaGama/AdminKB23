@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
-using Dominio.Modelos;
+using AdminKB.Dominio.Modelos;
 
-namespace Dominio.Utilitarios
+namespace AdminKB.Dominio.Utilitarios
 {
     public class MetodosSaft
     {

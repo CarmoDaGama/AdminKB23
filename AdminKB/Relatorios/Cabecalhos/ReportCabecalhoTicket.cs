@@ -1,5 +1,5 @@
 ﻿using DevExpress.XtraReports.UI;
-using Dominio.Modelos;
+using AdminKB.Dominio.Modelos;
 using System;
 using System.Collections;
 using System.ComponentModel;

@@ -1,6 +1,6 @@
-﻿using Dominio.Modelos;
-using Dominio.Modelos.ModulosVer;
-using Dominio.Utilitarios;
+﻿using AdminKB.Dominio.Modelos;
+using AdminKB.Dominio.Modelos.ModulosVer;
+using AdminKB.Dominio.Utilitarios;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;

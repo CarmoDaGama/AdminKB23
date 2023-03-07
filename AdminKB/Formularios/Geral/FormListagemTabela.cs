@@ -2,7 +2,7 @@
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraGrid.Views.Grid;
 using AdminKB.Aplicacoes;
-using Dominio.Utilitarios;
+using AdminKB.Dominio.Utilitarios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

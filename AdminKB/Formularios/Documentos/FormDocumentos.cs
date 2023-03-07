@@ -3,14 +3,14 @@ using DevExpress.XtraReports.UI;
 using AdminKB.Aplicacoes;
 using AdminKB.Formularios.Geral;
 using AdminKB.Formularios.Impressoes;
-using Dominio.Modelos;
+using AdminKB.Dominio.Modelos;
 using AdminKB.Relatorios;
-using Dominio.Utilitarios;
+using AdminKB.Dominio.Utilitarios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using Dominio.Enumerados;
+using AdminKB.Dominio.Enumerados;
 
 namespace AdminKB.Formularios.Documentos
 {

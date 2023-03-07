@@ -1,6 +1,6 @@
 ﻿using FoxLearn.License;
 
-namespace Dominio.Modelos.ModulosVer
+namespace AdminKB.Dominio.Modelos.ModulosVer
 {
     public class LicensaVer : Licenca
     {

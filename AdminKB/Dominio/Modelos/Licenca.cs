@@ -1,8 +1,8 @@
 ﻿using FoxLearn.License;
-using Dominio.Enumerados;
+using AdminKB.Dominio.Enumerados;
 using System;
 
-namespace Dominio.Modelos
+namespace AdminKB.Dominio.Modelos
 {
     public class Licenca
     {

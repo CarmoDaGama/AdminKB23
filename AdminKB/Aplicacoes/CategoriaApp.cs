@@ -1,4 +1,4 @@
-﻿using Dominio.Modelos;
+﻿using AdminKB.Dominio.Modelos;
 
 namespace AdminKB.Aplicacoes
 {

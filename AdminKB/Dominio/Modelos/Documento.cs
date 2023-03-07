@@ -1,8 +1,8 @@
-﻿using Dominio.Enumerados;
+﻿using AdminKB.Dominio.Enumerados;
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Dominio.Modelos
+namespace AdminKB.Dominio.Modelos
 {
     [Table(name:"Documentos")]
     public class Documento

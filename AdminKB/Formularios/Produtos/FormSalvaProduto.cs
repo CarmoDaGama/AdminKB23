@@ -3,11 +3,11 @@ using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Grid;
 using AdminKB.Aplicacoes;
-using Dominio.Enumerados;
+using AdminKB.Dominio.Enumerados;
 using AdminKB.Formularios.Geral;
-using Dominio.Modelos;
-using Dominio.Modelos.ModulosVer;
-using Dominio.Utilitarios;
+using AdminKB.Dominio.Modelos;
+using AdminKB.Dominio.Modelos.ModulosVer;
+using AdminKB.Dominio.Utilitarios;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -111,9 +111,10 @@ namespace AdminKB.Formularios.Produtos
         {
             ProdutoDesteForm.CodigoDeBarra = txtCodigoDeBarra.Text.Trim();
             ProdutoDesteForm.Nome = txtDescricao.Text.Trim();
-            ProdutoDesteForm.Categoria.Nome = txtCategoria.Text;
+            ProdutoDesteForm.Categoria.Nome = txtCategoria.Text.Trim();
             ProdutoDesteForm.Imposto.Nome = txtImposto.Text;
             ProdutoDesteForm.MotivoIsencao.Nome = txtMotivoIsencao.Text;
+            ProdutoDesteForm.CostType = (BalanceType)cboCostType.SelectedIndex;
             ProdutoDesteForm.Custo = Convert.ToDecimal(txtCusto.Text); 
             ProdutoDesteForm.Preco = Convert.ToDecimal(txtPrice.Text);
             ProdutoDesteForm.Vender = cboPermitirVenda.SelectedIndex == 0;
@@ -147,8 +148,12 @@ namespace AdminKB.Formularios.Produtos
 
         private void FormSalvaProduto_Load(object sender, EventArgs e)
         {
-            cboTipo.SelectedIndex = 0;
+            if (Operacao == OperacoesDeFormulario.ADICIONAR)
+            {
+                cboTipo.SelectedIndex = 1;
+            }
             MudarVisiblidadeDaPaginaEstoque();
+            ChangeProductType();
         }
 
         private void txtCategoria_Click(object sender, EventArgs e)
@@ -204,16 +209,6 @@ namespace AdminKB.Formularios.Produtos
             }
         }
 
-        private void AnularEntidadesComponentes()
-        {
-            ProdutoDesteForm.Categoria = new Categoria();
-            ProdutoDesteForm.Imposto = new Imposto();
-            ProdutoDesteForm.MotivoIsencao = new MotivoIsencao();
-            foreach (var item in ListaProdutoEstoque)
-            {
-                item.Estoque = new Estoque();
-            }
-        }
         private void IniciarEntidadesComponentes()
         {
             ProdutoDesteForm.Categoria = new Categoria();
@@ -227,14 +222,14 @@ namespace AdminKB.Formularios.Produtos
 
         private bool PodeSalvarProduto()
         {
-            if (txtCusto.Text.Contains("."))
-            {
-                txtCusto.Text = txtCusto.Text.Replace(".", ",");
-            }
-            if (txtPrice.Text.Contains("."))
-            {
-                txtPrice.Text = txtPrice.Text.Replace(".", ",");
-            }
+            //if (txtCusto.Text.Contains("."))
+            //{
+            //    txtCusto.Text = txtCusto.Text.Replace(".", ",");
+            //}
+            //if (txtPrice.Text.Contains("."))
+            //{
+            //    txtPrice.Text = txtPrice.Text.Replace(".", ",");
+            //}
             if (string.IsNullOrEmpty(txtDescricao.Text))
             {
                 Mensagem.Alerta("Insira a descrição do produto!");
@@ -479,29 +474,35 @@ namespace AdminKB.Formularios.Produtos
 
         private void btnRemoverProdutoEstoque_Click(object sender, EventArgs e)
         {
-            if (Mensagem.TemCerteza())
+            if (gridEstoque.RowCount > 0)
             {
-                var numeroDeSerie = gridEstoque.GetRowCellValue(IndiceProdutoEstoque, "NumeroDeSerie").ToString();
-                _ProdutoEstoqueApp.RemoverPorNumeroDeSerie(numeroDeSerie);
-                ListaProdutoEstoque.RemoveAt(IndiceProdutoComponente);
-                gradeEstoque.DataSource = null;
-                gradeEstoque.DataSource = ListaProdutoEstoque;
+                if (Mensagem.TemCerteza())
+                {
+                    var numeroDeSerie = gridEstoque.GetRowCellValue(IndiceProdutoEstoque, "NumeroDeSerie").ToString();
+                    _ProdutoEstoqueApp.RemoverPorNumeroDeSerie(numeroDeSerie);
+                    ListaProdutoEstoque.RemoveAt(IndiceProdutoComponente);
+                    gradeEstoque.DataSource = null;
+                    gradeEstoque.DataSource = ListaProdutoEstoque;
+                }
             }
         }
 
         private void btnRemoverProdutoComponente_Click(object sender, EventArgs e)
         {
-            if (Mensagem.TemCerteza())
+            if (gridComposicao.RowCount > 0)
             {
-                var produtoComposicaoId = Convert.ToInt32(gridComposicao.GetRowCellValue(IndiceProdutoComponente, "ProdutoComposicaoId"));
-                var produtoComposicao = ListaProdutoComponentes.Where(p => p.ProdutoComposicaoId == produtoComposicaoId).FirstOrDefault();
-                if (produtoComposicao.ProdutoComposicaoId > 0)
+                if (Mensagem.TemCerteza())
                 {
-                    _ProdutoCompApp.RemoverVer(produtoComposicao);
+                    var produtoComposicaoId = Convert.ToInt32(gridComposicao.GetRowCellValue(IndiceProdutoComponente, "ProdutoComposicaoId"));
+                    var produtoComposicao = ListaProdutoComponentes.Where(p => p.ProdutoComposicaoId == produtoComposicaoId).FirstOrDefault();
+                    if (produtoComposicao.ProdutoComposicaoId > 0)
+                    {
+                        _ProdutoCompApp.RemoverVer(produtoComposicao);
+                    }
+                    ListaProdutoComponentes.RemoveAt(IndiceProdutoComponente);
+                    gradeEstoque.DataSource = null;
+                    gradeEstoque.DataSource = ListaProdutoEstoque;
                 }
-                ListaProdutoComponentes.RemoveAt(IndiceProdutoComponente);
-                gradeEstoque.DataSource = null;
-                gradeEstoque.DataSource = ListaProdutoEstoque;
             }
         }
 
@@ -529,6 +530,62 @@ namespace AdminKB.Formularios.Produtos
             else
             {
                 pageEstoque.PageVisible = false;
+            }
+        }
+
+        private void cboTipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ChangeProductType();
+        }
+
+        private void ChangeProductType()
+        {
+            if (!IsProduct())
+            {
+                pageComposicoes.PageVisible = false;
+                pageEstoque.PageVisible = false;
+                cboControleEstoque.SelectedIndex = 1;
+                cboControleEstoque.Enabled = false;
+                if (Operacao == OperacoesDeFormulario.ADICIONAR)
+                {
+                    picImage.SvgImage = Properties.Resources.Services;
+                }
+            }
+            else
+            {
+                pageComposicoes.PageVisible = true;
+                pageEstoque.PageVisible = true;
+                cboControleEstoque.SelectedIndex = 0;
+                cboControleEstoque.Enabled = true;
+                if (Operacao == OperacoesDeFormulario.ADICIONAR)
+                {
+                    picImage.SvgImage = Properties.Resources.ProductFull;
+                }
+            }
+        }
+
+        private bool IsProduct()
+        {
+            return cboTipo.SelectedIndex == (int)TipoProduto.Produto;
+        }
+
+        private void cboCostType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ChangeTypeCost();
+        }
+        private void ChangeTypeCost()
+        {
+            if (cboCostType.SelectedIndex == (int)BalanceType.Value)
+            {
+                txtCusto.Properties.Mask.BeepOnError = true;
+                txtCusto.Properties.Mask.EditMask = "n2";
+                txtCusto.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            }
+            else
+            {
+                txtCusto.Properties.Mask.BeepOnError = true;
+                txtCusto.Properties.Mask.EditMask = "p";
+                txtCusto.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             }
         }
     }

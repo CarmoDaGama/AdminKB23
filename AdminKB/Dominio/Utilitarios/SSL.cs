@@ -1,4 +1,4 @@
-﻿using Dominio.Modelos;
+﻿using AdminKB.Dominio.Modelos;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Dominio.Utilitarios
+namespace AdminKB.Dominio.Utilitarios
 {
     public static class SSL
     {

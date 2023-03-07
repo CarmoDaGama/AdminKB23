@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dominio.Enumerados
+namespace AdminKB.Dominio.Enumerados
 {
     public enum EstadoEntidade
     {

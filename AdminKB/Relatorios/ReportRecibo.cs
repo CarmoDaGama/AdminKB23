@@ -1,9 +1,9 @@
 ﻿using DevExpress.XtraReports.UI;
 using AdminKB.Aplicacoes;
-using Dominio.Enumerados;
-using Dominio.Modelos;
+using AdminKB.Dominio.Enumerados;
+using AdminKB.Dominio.Modelos;
 using AdminKB.Relatorios.Cabecalhos;
-using Dominio.Utilitarios;
+using AdminKB.Dominio.Utilitarios;
 using System;
 using System.Collections;
 using System.ComponentModel;

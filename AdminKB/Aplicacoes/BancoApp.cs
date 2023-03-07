@@ -1,4 +1,4 @@
-﻿using Dominio.Modelos;
+﻿using AdminKB.Dominio.Modelos;
 using System;
 using System.Collections.Generic;
 using System.Linq;

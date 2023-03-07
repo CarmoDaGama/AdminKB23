@@ -1,6 +1,7 @@
-﻿using Dominio.Enumerados;
+﻿using AdminKB.Dominio.Enumerados;
+using System;
 
-namespace Dominio.Modelos
+namespace AdminKB.Dominio.Modelos
 {
     public class Produto
     {
@@ -13,6 +14,7 @@ namespace Dominio.Modelos
         public int MotivoIsencaoId { get; set; }
         public MotivoIsencao MotivoIsencao { get; set; }
         public decimal Preco { get; set; }
+        public BalanceType CostType { get; set; }
         public decimal Custo { get; set; }
         public byte[] Imagem { get; set; }
         public string CodigoDeBarra { get; set; }

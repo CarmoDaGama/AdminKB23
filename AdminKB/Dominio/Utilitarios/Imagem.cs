@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dominio.Utilitarios
+namespace AdminKB.Dominio.Utilitarios
 {
     public class Imagem
     {

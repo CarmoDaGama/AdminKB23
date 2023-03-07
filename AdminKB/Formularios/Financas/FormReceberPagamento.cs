@@ -1,10 +1,10 @@
 ﻿using AdminKB.Aplicacoes;
-using Dominio.Enumerados;
+using AdminKB.Dominio.Enumerados;
 using AdminKB.Formularios.Impressoes;
 using AdminKB.Formularios.Usuarios;
-using Dominio.Modelos;
+using AdminKB.Dominio.Modelos;
 using AdminKB.Relatorios;
-using Dominio.Utilitarios;
+using AdminKB.Dominio.Utilitarios;
 using System;
 using System.Collections.Generic;
 using System.Data;

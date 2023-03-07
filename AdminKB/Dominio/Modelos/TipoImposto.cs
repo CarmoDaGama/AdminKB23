@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Dominio.Modelos
+namespace AdminKB.Dominio.Modelos
 {
     [Table(name: "TipoImpostos")]
     public class TipoImposto

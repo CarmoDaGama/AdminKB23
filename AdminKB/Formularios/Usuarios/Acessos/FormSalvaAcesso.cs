@@ -1,8 +1,8 @@
 ﻿using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
-using Dominio.Enumerados;
-using Dominio.Modelos;
-using Dominio.Utilitarios;
+using AdminKB.Dominio.Enumerados;
+using AdminKB.Dominio.Modelos;
+using AdminKB.Dominio.Utilitarios;
 using AdminKB.Aplicacoes;
 using System;
 using System.Collections.Generic;

@@ -1,9 +1,9 @@
 ﻿using DevExpress.XtraBars;
 using AdminKB.Aplicacoes;
 using AdminKB.Formularios.Geral;
-using Dominio.Utilitarios;
+using AdminKB.Dominio.Utilitarios;
 using System;
-using Dominio.Modelos;
+using AdminKB.Dominio.Modelos;
 
 namespace AdminKB.Formularios.Usuarios
 {

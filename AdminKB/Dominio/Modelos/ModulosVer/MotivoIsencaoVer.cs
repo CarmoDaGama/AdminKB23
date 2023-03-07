@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dominio.Modelos.ModulosVer
+namespace AdminKB.Dominio.Modelos.ModulosVer
 {
     public class MotivoIsencaoVer
     {

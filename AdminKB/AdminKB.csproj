@@ -824,6 +824,7 @@
     <None Include="Resources\Chamada.svg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Services.svg" />
     <None Include="Resources\PUBLICIDADE &amp; MARKETING.png" />
     <None Include="Resources\Company_500px.png" />
     <None Include="Resources\Locked.svg" />

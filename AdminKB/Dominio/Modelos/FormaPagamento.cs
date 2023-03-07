@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dominio.Modelos
+namespace AdminKB.Dominio.Modelos
 {
     [Table(name: "FormaPagamentos")]
     public class FormaPagamento

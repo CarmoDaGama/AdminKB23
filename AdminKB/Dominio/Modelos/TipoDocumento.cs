@@ -1,7 +1,7 @@
-﻿using Dominio.Enumerados;
+﻿using AdminKB.Dominio.Enumerados;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Dominio.Modelos
+namespace AdminKB.Dominio.Modelos
 {
     [Table(name: "TipoDocumentos")]
     public class TipoDocumento

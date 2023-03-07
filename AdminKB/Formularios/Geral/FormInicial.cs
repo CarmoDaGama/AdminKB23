@@ -5,7 +5,7 @@ using AdminKB.Formularios.Financas;
 using AdminKB.Formularios.Produtos;
 using AdminKB.Formularios.SAFT;
 using AdminKB.Formularios.Usuarios;
-using Dominio.Utilitarios;
+using AdminKB.Dominio.Utilitarios;
 using System;
 using System.Windows.Forms;
 using AdminKB.Formularios.Clientes;

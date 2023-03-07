@@ -1,10 +1,10 @@
 ﻿using DevExpress.Utils.Svg;
-using Dominio.Enumerados;
-using Dominio.Modelos;
+using AdminKB.Dominio.Enumerados;
+using AdminKB.Dominio.Modelos;
 using System.IO;
 using System.Windows.Forms;
 
-namespace Dominio.Utilitarios
+namespace AdminKB.Dominio.Utilitarios
 {
     public static class Globais
     {

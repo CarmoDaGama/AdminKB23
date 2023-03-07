@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Dominio.Modelos
+namespace AdminKB.Dominio.Modelos
 {
     [Table(name: "Turnos")]
     public class Turno

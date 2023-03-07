@@ -31,8 +31,8 @@ namespace AdminKB.Formularios.Produtos
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSalvaProduto));
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnSalvar = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
@@ -85,14 +85,15 @@ namespace AdminKB.Formularios.Produtos
             this.btnEliminarArmzem = new System.Windows.Forms.Button();
             this.pageInicio = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.txtMotivoIsencao = new DevExpress.XtraEditors.TextEdit();
+            this.txtImposto = new DevExpress.XtraEditors.TextEdit();
+            this.txtCategoria = new DevExpress.XtraEditors.TextEdit();
+            this.txtProdutoId = new DevExpress.XtraEditors.TextEdit();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.txtImposto = new DevExpress.XtraEditors.TextEdit();
             this.label7 = new System.Windows.Forms.Label();
             this.txtPrice = new DevExpress.XtraEditors.TextEdit();
             this.txtCusto = new DevExpress.XtraEditors.TextEdit();
-            this.txtProdutoId = new DevExpress.XtraEditors.TextEdit();
             this.cboTipo = new DevExpress.XtraEditors.ComboBoxEdit();
             this.cboControleEstoque = new DevExpress.XtraEditors.ComboBoxEdit();
             this.cboPermitirVenda = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -100,7 +101,6 @@ namespace AdminKB.Formularios.Produtos
             this.picImage = new DevExpress.XtraEditors.PictureEdit();
             this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtCategoria = new DevExpress.XtraEditors.TextEdit();
             this.label5 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -112,6 +112,8 @@ namespace AdminKB.Formularios.Produtos
             this.panelCabecalho = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnClose = new DevExpress.XtraEditors.SimpleButton();
+            this.label12 = new System.Windows.Forms.Label();
+            this.cboCostType = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.pageComposicoes.SuspendLayout();
@@ -131,19 +133,20 @@ namespace AdminKB.Formularios.Produtos
             this.pageInicio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMotivoIsencao.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtImposto.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCategoria.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtProdutoId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrice.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCusto.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtProdutoId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboTipo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboControleEstoque.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboPermitirVenda.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImage.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCategoria.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodigoDeBarra.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescricao.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPaneSalvaProduto)).BeginInit();
             this.tabPaneSalvaProduto.SuspendLayout();
             this.panelCabecalho.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cboCostType.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -365,9 +368,9 @@ namespace AdminKB.Formularios.Produtos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gradeComposicao.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.gradeComposicao.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.gradeComposicao.Location = new System.Drawing.Point(17, 62);
             this.gradeComposicao.MainView = this.gridComposicao;
             this.gradeComposicao.Margin = new System.Windows.Forms.Padding(4);
@@ -482,9 +485,9 @@ namespace AdminKB.Formularios.Produtos
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gradeEstoque.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
-            gridLevelNode1.RelationName = "Level1";
+            gridLevelNode3.RelationName = "Level1";
             this.gradeEstoque.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1});
+            gridLevelNode3});
             this.gradeEstoque.Location = new System.Drawing.Point(23, 54);
             this.gradeEstoque.MainView = this.gridEstoque;
             this.gradeEstoque.Margin = new System.Windows.Forms.Padding(4);
@@ -715,22 +718,24 @@ namespace AdminKB.Formularios.Produtos
             this.pageInicio.Appearance.Options.UseBackColor = true;
             this.pageInicio.Caption = "INICIO";
             this.pageInicio.Controls.Add(this.txtMotivoIsencao);
+            this.pageInicio.Controls.Add(this.txtImposto);
+            this.pageInicio.Controls.Add(this.txtCategoria);
+            this.pageInicio.Controls.Add(this.txtProdutoId);
             this.pageInicio.Controls.Add(this.label6);
             this.pageInicio.Controls.Add(this.label2);
             this.pageInicio.Controls.Add(this.label23);
-            this.pageInicio.Controls.Add(this.txtImposto);
             this.pageInicio.Controls.Add(this.label7);
             this.pageInicio.Controls.Add(this.txtPrice);
             this.pageInicio.Controls.Add(this.txtCusto);
-            this.pageInicio.Controls.Add(this.txtProdutoId);
+            this.pageInicio.Controls.Add(this.cboCostType);
             this.pageInicio.Controls.Add(this.cboTipo);
             this.pageInicio.Controls.Add(this.cboControleEstoque);
             this.pageInicio.Controls.Add(this.cboPermitirVenda);
             this.pageInicio.Controls.Add(this.label8);
             this.pageInicio.Controls.Add(this.picImage);
             this.pageInicio.Controls.Add(this.label9);
+            this.pageInicio.Controls.Add(this.label12);
             this.pageInicio.Controls.Add(this.label3);
-            this.pageInicio.Controls.Add(this.txtCategoria);
             this.pageInicio.Controls.Add(this.label5);
             this.pageInicio.Controls.Add(this.label10);
             this.pageInicio.Controls.Add(this.label11);
@@ -739,27 +744,50 @@ namespace AdminKB.Formularios.Produtos
             this.pageInicio.Controls.Add(this.txtDescricao);
             this.pageInicio.Margin = new System.Windows.Forms.Padding(4);
             this.pageInicio.Name = "pageInicio";
-            this.pageInicio.Size = new System.Drawing.Size(1081, 371);
+            this.pageInicio.Size = new System.Drawing.Size(1081, 409);
             // 
             // txtMotivoIsencao
             // 
-            this.txtMotivoIsencao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMotivoIsencao.Enabled = false;
-            this.txtMotivoIsencao.Location = new System.Drawing.Point(452, 278);
-            this.txtMotivoIsencao.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMotivoIsencao.Location = new System.Drawing.Point(452, 266);
             this.txtMotivoIsencao.Name = "txtMotivoIsencao";
-            this.txtMotivoIsencao.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.txtMotivoIsencao.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMotivoIsencao.Properties.Appearance.Options.UseBackColor = true;
-            this.txtMotivoIsencao.Properties.Appearance.Options.UseFont = true;
             this.txtMotivoIsencao.Properties.ContextImageOptions.Alignment = DevExpress.XtraEditors.ContextImageAlignment.Far;
             this.txtMotivoIsencao.Properties.ContextImageOptions.SvgImage = global::AdminKB.Properties.Resources.Mais;
             this.txtMotivoIsencao.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(15, 15);
-            this.txtMotivoIsencao.Properties.ReadOnly = true;
-            this.txtMotivoIsencao.Size = new System.Drawing.Size(615, 22);
-            this.txtMotivoIsencao.TabIndex = 203;
+            this.txtMotivoIsencao.Size = new System.Drawing.Size(615, 24);
+            this.txtMotivoIsencao.TabIndex = 205;
             this.txtMotivoIsencao.Click += new System.EventHandler(this.txtMotivoIsencao_Click);
+            // 
+            // txtImposto
+            // 
+            this.txtImposto.Location = new System.Drawing.Point(452, 236);
+            this.txtImposto.Name = "txtImposto";
+            this.txtImposto.Properties.ContextImageOptions.Alignment = DevExpress.XtraEditors.ContextImageAlignment.Far;
+            this.txtImposto.Properties.ContextImageOptions.SvgImage = global::AdminKB.Properties.Resources.Mais;
+            this.txtImposto.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(15, 15);
+            this.txtImposto.Size = new System.Drawing.Size(615, 24);
+            this.txtImposto.TabIndex = 205;
+            this.txtImposto.Click += new System.EventHandler(this.txtImposto_Click);
+            // 
+            // txtCategoria
+            // 
+            this.txtCategoria.Location = new System.Drawing.Point(452, 206);
+            this.txtCategoria.MenuManager = this.ribbon;
+            this.txtCategoria.Name = "txtCategoria";
+            this.txtCategoria.Properties.ContextImageOptions.Alignment = DevExpress.XtraEditors.ContextImageAlignment.Far;
+            this.txtCategoria.Properties.ContextImageOptions.SvgImage = global::AdminKB.Properties.Resources.Mais;
+            this.txtCategoria.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(15, 15);
+            this.txtCategoria.Size = new System.Drawing.Size(615, 24);
+            this.txtCategoria.TabIndex = 205;
+            this.txtCategoria.Click += new System.EventHandler(this.txtCategoria_Click);
+            // 
+            // txtProdutoId
+            // 
+            this.txtProdutoId.Location = new System.Drawing.Point(453, 22);
+            this.txtProdutoId.MenuManager = this.ribbon;
+            this.txtProdutoId.Name = "txtProdutoId";
+            this.txtProdutoId.Properties.ReadOnly = true;
+            this.txtProdutoId.Size = new System.Drawing.Size(614, 24);
+            this.txtProdutoId.TabIndex = 204;
             // 
             // label6
             // 
@@ -787,37 +815,18 @@ namespace AdminKB.Formularios.Produtos
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(364, 281);
+            this.label23.Location = new System.Drawing.Point(364, 269);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(52, 16);
             this.label23.TabIndex = 202;
             this.label23.Text = "Isenção";
             // 
-            // txtImposto
-            // 
-            this.txtImposto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtImposto.Location = new System.Drawing.Point(452, 248);
-            this.txtImposto.Margin = new System.Windows.Forms.Padding(4);
-            this.txtImposto.Name = "txtImposto";
-            this.txtImposto.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.txtImposto.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImposto.Properties.Appearance.Options.UseBackColor = true;
-            this.txtImposto.Properties.Appearance.Options.UseFont = true;
-            this.txtImposto.Properties.ContextImageOptions.Alignment = DevExpress.XtraEditors.ContextImageAlignment.Far;
-            this.txtImposto.Properties.ContextImageOptions.SvgImage = global::AdminKB.Properties.Resources.Mais;
-            this.txtImposto.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(15, 15);
-            this.txtImposto.Properties.ReadOnly = true;
-            this.txtImposto.Size = new System.Drawing.Size(615, 22);
-            this.txtImposto.TabIndex = 200;
-            this.txtImposto.Click += new System.EventHandler(this.txtImposto_Click);
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(364, 216);
+            this.label7.Location = new System.Drawing.Point(364, 206);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 16);
@@ -829,7 +838,7 @@ namespace AdminKB.Formularios.Produtos
             this.txtPrice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPrice.EditValue = "0,00";
-            this.txtPrice.Location = new System.Drawing.Point(452, 338);
+            this.txtPrice.Location = new System.Drawing.Point(452, 357);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -846,38 +855,25 @@ namespace AdminKB.Formularios.Produtos
             this.txtCusto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCusto.EditValue = "0,00";
-            this.txtCusto.Location = new System.Drawing.Point(452, 308);
+            this.txtCusto.Location = new System.Drawing.Point(452, 327);
             this.txtCusto.Margin = new System.Windows.Forms.Padding(4);
             this.txtCusto.Name = "txtCusto";
             this.txtCusto.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCusto.Properties.Appearance.Options.UseFont = true;
             this.txtCusto.Properties.ContextImageOptions.Alignment = DevExpress.XtraEditors.ContextImageAlignment.Far;
-            this.txtCusto.Properties.Mask.EditMask = "n2";
+            this.txtCusto.Properties.Mask.BeepOnError = true;
+            this.txtCusto.Properties.Mask.EditMask = "p";
             this.txtCusto.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtCusto.Properties.MaxLength = 18;
             this.txtCusto.Size = new System.Drawing.Size(615, 22);
             this.txtCusto.TabIndex = 184;
             // 
-            // txtProdutoId
-            // 
-            this.txtProdutoId.Location = new System.Drawing.Point(452, 27);
-            this.txtProdutoId.Margin = new System.Windows.Forms.Padding(4);
-            this.txtProdutoId.Name = "txtProdutoId";
-            this.txtProdutoId.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.txtProdutoId.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProdutoId.Properties.Appearance.Options.UseBackColor = true;
-            this.txtProdutoId.Properties.Appearance.Options.UseFont = true;
-            this.txtProdutoId.Properties.ContextImageOptions.Alignment = DevExpress.XtraEditors.ContextImageAlignment.Far;
-            this.txtProdutoId.Properties.ReadOnly = true;
-            this.txtProdutoId.Size = new System.Drawing.Size(615, 22);
-            this.txtProdutoId.TabIndex = 199;
-            // 
             // cboTipo
             // 
             this.cboTipo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cboTipo.EditValue = "Produto";
-            this.cboTipo.Location = new System.Drawing.Point(453, 183);
+            this.cboTipo.EditValue = "Serviço";
+            this.cboTipo.Location = new System.Drawing.Point(452, 177);
             this.cboTipo.Margin = new System.Windows.Forms.Padding(4);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -891,6 +887,7 @@ namespace AdminKB.Formularios.Produtos
             this.cboTipo.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cboTipo.Size = new System.Drawing.Size(615, 22);
             this.cboTipo.TabIndex = 181;
+            this.cboTipo.SelectedIndexChanged += new System.EventHandler(this.cboTipo_SelectedIndexChanged);
             // 
             // cboControleEstoque
             // 
@@ -936,7 +933,7 @@ namespace AdminKB.Formularios.Produtos
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(364, 311);
+            this.label8.Location = new System.Drawing.Point(364, 330);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(40, 16);
@@ -946,14 +943,14 @@ namespace AdminKB.Formularios.Produtos
             // picImage
             // 
             this.picImage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picImage.EditValue = global::AdminKB.Properties.Resources.ProductFull;
+            this.picImage.EditValue = global::AdminKB.Properties.Resources.Services;
             this.picImage.Location = new System.Drawing.Point(13, 30);
             this.picImage.Margin = new System.Windows.Forms.Padding(4);
             this.picImage.Name = "picImage";
             this.picImage.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.picImage.Properties.ShowEditMenuItem = DevExpress.Utils.DefaultBoolean.False;
             this.picImage.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.picImage.Size = new System.Drawing.Size(327, 293);
+            this.picImage.Size = new System.Drawing.Size(327, 349);
             this.picImage.TabIndex = 157;
             this.picImage.EditValueChanged += new System.EventHandler(this.picImage_EditValueChanged);
             // 
@@ -961,7 +958,7 @@ namespace AdminKB.Formularios.Produtos
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(364, 251);
+            this.label9.Location = new System.Drawing.Point(364, 239);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(54, 16);
@@ -979,30 +976,11 @@ namespace AdminKB.Formularios.Produtos
             this.label3.TabIndex = 173;
             this.label3.Text = "Descrição";
             // 
-            // txtCategoria
-            // 
-            this.txtCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCategoria.Location = new System.Drawing.Point(452, 213);
-            this.txtCategoria.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.txtCategoria.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCategoria.Properties.Appearance.Options.UseBackColor = true;
-            this.txtCategoria.Properties.Appearance.Options.UseFont = true;
-            this.txtCategoria.Properties.ContextImageOptions.Alignment = DevExpress.XtraEditors.ContextImageAlignment.Far;
-            this.txtCategoria.Properties.ContextImageOptions.SvgImage = global::AdminKB.Properties.Resources.Mais;
-            this.txtCategoria.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(15, 15);
-            this.txtCategoria.Properties.ReadOnly = true;
-            this.txtCategoria.Size = new System.Drawing.Size(615, 22);
-            this.txtCategoria.TabIndex = 178;
-            this.txtCategoria.Click += new System.EventHandler(this.txtCategoria_Click);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(365, 188);
+            this.label5.Location = new System.Drawing.Point(364, 182);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(33, 16);
@@ -1013,7 +991,7 @@ namespace AdminKB.Formularios.Produtos
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(364, 341);
+            this.label10.Location = new System.Drawing.Point(364, 360);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(40, 16);
@@ -1083,9 +1061,9 @@ namespace AdminKB.Formularios.Produtos
             this.pageInicio,
             this.pageEstoque,
             this.pageComposicoes});
-            this.tabPaneSalvaProduto.RegularSize = new System.Drawing.Size(1081, 413);
+            this.tabPaneSalvaProduto.RegularSize = new System.Drawing.Size(1081, 451);
             this.tabPaneSalvaProduto.SelectedPage = this.pageInicio;
-            this.tabPaneSalvaProduto.Size = new System.Drawing.Size(1081, 413);
+            this.tabPaneSalvaProduto.Size = new System.Drawing.Size(1081, 451);
             this.tabPaneSalvaProduto.TabIndex = 105;
             this.tabPaneSalvaProduto.Text = "INICIO";
             this.tabPaneSalvaProduto.TransitionType = DevExpress.Utils.Animation.Transitions.Clock;
@@ -1143,11 +1121,42 @@ namespace AdminKB.Formularios.Produtos
             this.btnClose.Text = "X";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(364, 302);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(69, 16);
+            this.label12.TabIndex = 175;
+            this.label12.Text = "Tipo Custo";
+            // 
+            // cboCostType
+            // 
+            this.cboCostType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboCostType.EditValue = "Normal";
+            this.cboCostType.Location = new System.Drawing.Point(452, 297);
+            this.cboCostType.Margin = new System.Windows.Forms.Padding(4);
+            this.cboCostType.Name = "cboCostType";
+            this.cboCostType.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboCostType.Properties.Appearance.Options.UseFont = true;
+            this.cboCostType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboCostType.Properties.Items.AddRange(new object[] {
+            "Normal",
+            "Percentual"});
+            this.cboCostType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cboCostType.Size = new System.Drawing.Size(615, 22);
+            this.cboCostType.TabIndex = 181;
+            this.cboCostType.SelectedIndexChanged += new System.EventHandler(this.cboCostType_SelectedIndexChanged);
+            // 
             // FormSalvaProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1081, 471);
+            this.ClientSize = new System.Drawing.Size(1081, 509);
             this.ControlBox = false;
             this.Controls.Add(this.tabPaneSalvaProduto);
             this.Controls.Add(this.ribbon);
@@ -1181,20 +1190,21 @@ namespace AdminKB.Formularios.Produtos
             this.pageInicio.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMotivoIsencao.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtImposto.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCategoria.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtProdutoId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrice.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCusto.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtProdutoId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboTipo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboControleEstoque.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboPermitirVenda.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImage.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCategoria.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodigoDeBarra.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescricao.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPaneSalvaProduto)).EndInit();
             this.tabPaneSalvaProduto.ResumeLayout(false);
             this.panelCabecalho.ResumeLayout(false);
             this.panelCabecalho.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cboCostType.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1225,22 +1235,18 @@ namespace AdminKB.Formularios.Produtos
         private DevExpress.XtraBars.BarButtonItem btnSaveAndClose;
         private DevExpress.XtraBars.Navigation.TabPane tabPaneSalvaProduto;
         private DevExpress.XtraBars.Navigation.TabNavigationPage pageInicio;
-        private DevExpress.XtraEditors.TextEdit txtMotivoIsencao;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label23;
-        private DevExpress.XtraEditors.TextEdit txtImposto;
         private System.Windows.Forms.Label label7;
         private DevExpress.XtraEditors.TextEdit txtPrice;
         private DevExpress.XtraEditors.TextEdit txtCusto;
-        private DevExpress.XtraEditors.TextEdit txtProdutoId;
         private DevExpress.XtraEditors.ComboBoxEdit cboControleEstoque;
         private DevExpress.XtraEditors.ComboBoxEdit cboPermitirVenda;
         private System.Windows.Forms.Label label8;
         private DevExpress.XtraEditors.PictureEdit picImage;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label3;
-        private DevExpress.XtraEditors.TextEdit txtCategoria;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private DevExpress.XtraEditors.TextEdit txtCodigoDeBarra;
@@ -1280,5 +1286,11 @@ namespace AdminKB.Formularios.Produtos
         private DevExpress.XtraEditors.SimpleButton btnClose;
         private DevExpress.XtraEditors.ComboBoxEdit cboTipo;
         private System.Windows.Forms.Label label5;
+        private DevExpress.XtraEditors.TextEdit txtMotivoIsencao;
+        private DevExpress.XtraEditors.TextEdit txtImposto;
+        private DevExpress.XtraEditors.TextEdit txtCategoria;
+        private DevExpress.XtraEditors.TextEdit txtProdutoId;
+        private DevExpress.XtraEditors.ComboBoxEdit cboCostType;
+        private System.Windows.Forms.Label label12;
     }
 }

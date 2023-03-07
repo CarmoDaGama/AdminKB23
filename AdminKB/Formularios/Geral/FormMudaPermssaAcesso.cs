@@ -1,6 +1,6 @@
 ﻿using DevExpress.XtraEditors;
-using Dominio.Modelos;
-using Dominio.Utilitarios;
+using AdminKB.Dominio.Modelos;
+using AdminKB.Dominio.Utilitarios;
 using AdminKB.Aplicacoes;
 
 namespace AdminKB.Formularios.Geral

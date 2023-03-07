@@ -1,11 +1,11 @@
 ﻿using DevExpress.Utils.Svg;
-using Dominio.Enumerados;
-using Dominio.Utilitarios;
+using AdminKB.Dominio.Enumerados;
+using AdminKB.Dominio.Utilitarios;
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Drawing;
 
-namespace Dominio.Modelos
+namespace AdminKB.Dominio.Modelos
 {
     [Table(name: "ProdutoEstoques")]
     public class ProdutoEstoque

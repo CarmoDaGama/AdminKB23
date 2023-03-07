@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Dominio.Utilitarios
+namespace AdminKB.Dominio.Utilitarios
 {
     public static class ConversorDeMoedasCambias
     {

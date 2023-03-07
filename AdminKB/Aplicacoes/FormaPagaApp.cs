@@ -1,5 +1,5 @@
-﻿using Dominio.Enumerados;
-using Dominio.Modelos;
+﻿using AdminKB.Dominio.Enumerados;
+using AdminKB.Dominio.Modelos;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;

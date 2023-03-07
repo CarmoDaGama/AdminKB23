@@ -1,4 +1,4 @@
-﻿namespace Dominio.Enumerados
+﻿namespace AdminKB.Dominio.Enumerados
 {
     public enum OperacoesDeFormulario
     {

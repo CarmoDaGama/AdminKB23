@@ -1,12 +1,12 @@
-﻿using Dominio.Modelos;
+﻿using AdminKB.Dominio.Modelos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
-using Dominio.Enumerados;
-using Dominio.Utilitarios;
+using AdminKB.Dominio.Enumerados;
+using AdminKB.Dominio.Utilitarios;
 
 namespace AdminKB.Aplicacoes
 {
